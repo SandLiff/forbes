@@ -589,6 +589,9 @@ body {
 
 .main__container {
   text-align: center;
+}
+
+.main__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1024,7 +1027,7 @@ body {
   max-width: 100%;
   border-radius: 50%;
   width: 12.5rem;
-  height: 12.5rem;
+  height: 7.5rem;
 }
 
 .banner-chapter {
@@ -1151,7 +1154,7 @@ body {
   }
 
   .main__container {
-    padding-top: 6.25rem;
+    padding-top: 15.625rem;
   }
 
   .main__slider {
@@ -1353,15 +1356,15 @@ body {
     }
 }
 
-@supports (padding-top: clamp( 6.25rem , 6.25rem  +  0vw , 6.25rem )) {
+@supports (padding-top: clamp( 6.25rem , 3.9599236641rem  +  11.4503816794vw , 15.625rem )) {
     .main__container {
-      padding-top: clamp( 6.25rem , 6.25rem  +  0vw , 6.25rem );
+      padding-top: clamp( 6.25rem , 3.9599236641rem  +  11.4503816794vw , 15.625rem );
     }
 }
 
-@supports not (padding-top: clamp( 6.25rem , 6.25rem  +  0vw , 6.25rem )) {
+@supports not (padding-top: clamp( 6.25rem , 3.9599236641rem  +  11.4503816794vw , 15.625rem )) {
     .main__container {
-      padding-top: calc(6.25rem + 0 * (100vw - 20rem) / 81.875);
+      padding-top: calc(6.25rem + 9.375 * (100vw - 20rem) / 81.875);
     }
 }
 
