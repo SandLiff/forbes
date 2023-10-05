@@ -587,6 +587,18 @@ body {
   max-width: 25rem;
 }
 
+.main__caption {
+  margin-bottom: 0.9375rem;
+  font-weight: 500;
+}
+
+.main__title {
+  font-weight: 700;
+  max-width: 37.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.9375rem;
+}
+
 .main__container {
   text-align: center;
 }
@@ -1153,6 +1165,10 @@ body {
     margin-bottom: 9.375rem;
   }
 
+  .main__title {
+    font-size: 2rem;
+  }
+
   .main__container {
     padding-top: 15.625rem;
   }
@@ -1213,6 +1229,10 @@ body {
     margin-bottom: 2.1875rem;
   }
 
+  .main__title {
+    font-size: 1.6875rem;
+  }
+
   .main__container {
     padding-top: 6.25rem;
   }
@@ -1252,6 +1272,14 @@ body {
 }
 
 @media (max-width: 47.99875em) {
+  .actions-header__online {
+    display: none;
+  }
+
+  .actions-header__symbol {
+    display: none;
+  }
+
   .menu {
     display: none;
   }
@@ -1353,6 +1381,18 @@ body {
 @supports not (margin-bottom: clamp( 2.1875rem , 0.4317748092rem  +  8.7786259542vw , 9.375rem )) {
     .page__chapter {
       margin-bottom: calc(2.1875rem + 7.1875 * (100vw - 20rem) / 81.875);
+    }
+}
+
+@supports (font-size: clamp( 1.6875rem , 1.6111641221rem  +  0.3816793893vw , 2rem )) {
+    .main__title {
+      font-size: clamp( 1.6875rem , 1.6111641221rem  +  0.3816793893vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.6875rem , 1.6111641221rem  +  0.3816793893vw , 2rem )) {
+    .main__title {
+      font-size: calc(1.6875rem + 0.3125 * (100vw - 20rem) / 81.875);
     }
 }
 
