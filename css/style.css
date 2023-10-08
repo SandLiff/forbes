@@ -887,6 +887,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 0.75rem;
 }
 
 .item-people__info:not(:last-child) {

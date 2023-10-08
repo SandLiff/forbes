@@ -3785,6 +3785,14 @@
             }));
         }
     }), 0);
+    var dateElements = document.querySelectorAll(".news-main__date");
+    dateElements.forEach((function(element) {
+        var currentTime = new Date;
+        var randomMinutes = Math.floor(Math.random() * (30 - 3 + 1) + 3);
+        currentTime.setMinutes(currentTime.getMinutes() - randomMinutes);
+        var formattedDate = "Сегодня " + (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours() + ":" + (currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
+        element.textContent = formattedDate;
+    }));
     function getRandomNumber(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
