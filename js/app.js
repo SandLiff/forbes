@@ -3713,7 +3713,7 @@
             spaceBetween: 0,
             speed: 800,
             autoplay: {
-                delay: 1e3,
+                delay: 2500,
                 disableOnInteraction: false
             },
             navigation: {
